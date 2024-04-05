@@ -21,6 +21,7 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;
 import org.springframework.web.bind.annotation.*;
 
@@ -33,6 +34,7 @@ import java.util.Map;
 @RequestMapping("/api/account")
 @RequiredArgsConstructor
 @Slf4j
+@Configuration
 public class AccountController {
 
     public final EncryptService encryptService;
@@ -43,10 +45,10 @@ public class AccountController {
     @Value("${openbank.url}")
     private String url;
 
-    @Value("${idontcare.account}")
+    @Value("${idoncare.account}")
     private String iDontCareAccount;
 
-    @Value("${idontcare.bankcode}")
+    @Value("${idoncare.bankcode}")
     private String iDontCareBankCode;
 
     //사용자 인증

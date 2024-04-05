@@ -52,7 +52,6 @@ public class MissionController {
             return ResponseDto.fail(e);
         }
     }
-
     @GetMapping(value = "")
     @Operation(summary = "미션 불러오기", description = "해당 유저의 타입과 ID로 미션 불러오기")
     @ApiResponses(value = {
@@ -89,8 +88,6 @@ public class MissionController {
         }
     }
 
-
-
     @PutMapping("/status")
     @Operation(summary = "미션 상태 변경", description = "REQUEST > PROCESS > UNPAID > COMPLETE")
     @ApiResponses(value = {
@@ -106,11 +103,7 @@ public class MissionController {
         }catch (UpdateFailException | NoSuchContentException e){
             return ResponseDto.fail(e);
         }
-
     }
-
-
-
     @DeleteMapping("/{missionId}")
     @Operation(summary = "미션 삭제", description = "MissionId로 조회 후 삭제")
     @ApiResponses(value = {
