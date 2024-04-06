@@ -1,0 +1,30 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: Openbank
+    password: Openbank
+    url: jdbc:mysql://localhost:3306/Openbank?serverTimezone=Asia/Seoul&characterEncoding=UTF-8
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        format_sql: false
+        show_sql: false
+        default_batch_fetch_size: 100
+  main:
+    allow-bean-definition-overriding: true
+  sql:
+    init:
+      data-locations: classpath:data.sql
+springdoc:
+  swagger-ui:
+    path: /swger-ui.html
+server:
+  port: 8082
+
+logging:
+  level:
+    org:
+      hibernate:
+        type.descriptor.sql: trace
