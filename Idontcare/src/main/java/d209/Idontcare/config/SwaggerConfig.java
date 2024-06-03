@@ -1,5 +1,7 @@
 package d209.Idontcare.config;
 
+import io.swagger.v3.oas.annotations.OpenAPIDefinition;
+import io.swagger.v3.oas.annotations.servers.Server;
 import io.swagger.v3.oas.models.Components;
 import io.swagger.v3.oas.models.OpenAPI;
 import io.swagger.v3.oas.models.info.Info;
@@ -11,6 +13,7 @@ import org.springframework.context.annotation.Configuration;
 import java.awt.*;
 
 @Configuration
+@OpenAPIDefinition(servers = {@Server(url="https://dollhome.gonetis.com", description = "Default Server URL")})
 public class SwaggerConfig {
   @Bean
   public OpenAPI openAPI() {
