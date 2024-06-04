@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import Header from '../components/common/Header';
 import QrReader from "react-web-qr-reader";
 

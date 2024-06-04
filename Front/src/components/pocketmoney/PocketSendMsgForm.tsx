@@ -1,4 +1,4 @@
-import React, { FC, useState } from 'react';
+import { FC, useState } from 'react';
 import Header from "../common/Header";
 import FullBtn from '../common/FullBtn';
 import MsgBox from '../common/MsgBox';

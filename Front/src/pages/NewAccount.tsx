@@ -14,7 +14,7 @@ const NewAccount = () => {
       {step === 1 && <NewAccountCreateUserInfo onChangeStep={handleStep} step={step} />}
       {step === 2 && <NewAccountSelectAccount onChangeStep={handleStep} step={step} />}
       {step === 3 && <NewAccountVertification onChangeStep={handleStep} step={step} />}
-      {step === 4 && <NewAccountARS onChangeStep={handleStep} step={step} />}
+      {/* {step === 4 && <NewAccountARS onChangeStep={handleStep} step={step} />}8 */}
     </>
   );
 };

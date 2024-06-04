@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Header from "../../common/Header";
 import FullBtn from '../../common/FullBtn';
 

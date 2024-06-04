@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
 import Header from "../common/Header";
 import NumberPlate from '../common/NumberPlate';
 import FullBtn from '../common/FullBtn';

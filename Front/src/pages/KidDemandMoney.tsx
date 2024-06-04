@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import KidFormSelect from '../components/pocketmoney/kid/KidFormSelect';
 import KidFormAmount from '../components/pocketmoney/kid/KidFormAmount'; // Import your component
 import KidFormMsg from '../components/pocketmoney/kid/KidFormMsg'; // Import your component
