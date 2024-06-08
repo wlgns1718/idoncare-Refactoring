@@ -21,7 +21,7 @@ const NewAccount = () => {
         {step === 3 && (
           <NewAccountVertification onChangeStep={handleStep} step={step} />
         )}
-        {step === 4 && <NewAccountARS />}
+      {step === 4 && <NewAccountARS />}
       </div>
     </>
   );
